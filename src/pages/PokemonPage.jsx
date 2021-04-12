@@ -21,13 +21,14 @@ function PokemonPage({ profile }) {
     <>
       {profile.sprites && (
         <div className="pokemon-page">
-          
+
           <img
             className="pokemon-page__image"
             src={profile.sprites ? profile.sprites.other.dream_world.front_default : ''}
+            alt=''
           />
           <div className="profile">
-            <div className="profile__title">{profile.name}</div>
+            <div className="profile__title">{profile.name[0].toUpperCase() + profile.name.slice(1)}</div>
             <div className="profile__height">
               <div className="profile__height-title">Height: </div>
               <div className="profile__height-text">{profile.height}</div>

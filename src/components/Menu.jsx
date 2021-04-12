@@ -10,7 +10,7 @@ function Menu({ visibleMenu, onVisibleMenu, pokemons }) {
       <div className={visibleMenu ? 'menu-popup' : 'menu-popup hidden'}>
         <div className="menu-popup__block">
           <div className="menu-popup__title">List</div>
-          <img className="menu-popup__close" src={menuCloseSvg} onClick={onVisibleMenu} />
+          <img className="menu-popup__close" src={menuCloseSvg} onClick={onVisibleMenu} alt='' />
         </div>
         <div className="menu-list">
 

@@ -10,6 +10,7 @@ import Menu from './components/Menu';
 import { fetchPokemon } from './api/api';
 
 const App = () => {
+  // const [isLoading, setIsLoading] = React.useState(false);
   const [visibleMenu, setVisibleMenu] = React.useState(false);
   const dispatch = useDispatch();
   const { pokemons } = useSelector(({ pokemons }) => pokemons);
@@ -22,6 +23,7 @@ const App = () => {
   const onVisibleMenu = () => {
     setVisibleMenu(!visibleMenu);
   };
+
   return (
     <div className="App">
       <div className="container">

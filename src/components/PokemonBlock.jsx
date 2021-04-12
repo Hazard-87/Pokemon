@@ -21,7 +21,7 @@ function PokemonBlock({ pokemons }) {
           key={item.name + index}
           onClick={() => setPokemon(item.name)}>
           <img className="content-blocks__img" src={item.image} alt="img" />
-          <div className="content-blocks__title">{item.name}</div>
+          <div className="content-blocks__title">{item.name[0].toUpperCase() + item.name.slice(1)}</div>
         </Link>
       ))}
     </>

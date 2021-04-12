@@ -20,7 +20,7 @@ function NavList({ pokemons }) {
           to={`/pokemon/${item.name}`}
           key={item.name + index}
           onClick={() => setPokemon(item.name)}>
-          {item.name}
+          {item.name[0].toUpperCase() + item.name.slice(1)}
         </Link>
       ))}
     </div>
